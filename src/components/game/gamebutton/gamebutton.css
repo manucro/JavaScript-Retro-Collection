@@ -1,0 +1,24 @@
+.game-button {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  margin-right: 0;
+  margin-bottom: 0;
+  background-color: #ccc;
+  color: #000;
+}
+.game-button:hover {
+  cursor: pointer;
+  background-color: #999;
+}
+.game-button:active { background-color: #777; }
+.game-button-icon {
+  width: 30px;
+  height: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .game-button { padding: 10px; }
+}

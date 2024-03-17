@@ -1,0 +1,71 @@
+.app {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.game-box {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 20px;
+}
+.credits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 50px;
+  color: #fff4;
+}
+.credits > a {
+  color: inherit;
+  padding: 0 0 0 4px
+}
+
+.modal {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #000a;
+}
+.modal-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 80%;
+  background-color: #666;
+  border-radius: 20px;
+  padding: 80px;
+}
+.modal-text {
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  white-space: pre-line;
+}
+.modal-x-button {
+  position: absolute;
+  top: 20px; left: 20px;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  color: #fff;
+  background-color: #222;
+  padding: 10px;
+}
+.modal-x-button:hover {
+  cursor: pointer;
+  background-color: #444;
+}
+
+@media only screen and (max-width: 600px) {
+  .game-box { flex-direction: column; }
+  .credits { min-height: 50px; font-size: 10px; }
+}

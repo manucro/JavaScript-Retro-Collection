@@ -1,0 +1,26 @@
+.title {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: #fff;
+  font-size: 60px;
+}
+span { padding: 2px; }
+.space { padding: 10px; }
+
+@keyframes pulseLetter {
+  0% { color: #fff; }
+  20% { color: #666; }
+  40% { color: #fff; }
+}
+
+@media only screen and (max-width: 1000px) {
+  .title { font-size: 30px; }
+}
+@media only screen and (max-width: 600px) {
+  .title { min-height: 100px; font-size: 22px; }
+  span { padding: 0; }
+  .space { padding: 5px; }
+}
