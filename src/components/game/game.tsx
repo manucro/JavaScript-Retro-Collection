@@ -23,6 +23,7 @@ const Game: React.FC<Props> = ({ name, image, linkPlay, linkGitHub, controls }) 
       </div>
       <div className='game-buttons'>
         <GameButton text='Controls' action={() => {
+          document.querySelector(".app")?.scrollTo(0, 0);
           setModal([true, controls]);
         }} />
       </div>

@@ -6,7 +6,9 @@ import { GlobalContext } from './globalContext';
 function App() {
   const [modal, setModal] = useState<[boolean, string]>([false, '']);
   return (
-    <div className='app'>
+    <div className='app' style={{
+      overflow: (modal[0]) ? "hidden" : "auto"
+    }}>
       {(modal[0]) ? <div className='modal'>
         <div className='modal-box'>
           <div className='modal-x-button' onClick={() => setModal([false, ''])}>X</div>
