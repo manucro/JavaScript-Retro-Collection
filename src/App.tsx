@@ -28,7 +28,7 @@ A - D: Move Player 2
 Local multiplayer game in which each player must try to get the ball to the opponent's court.`} />
         </div>
         <div className='credits'>
-          Games made by <a href='https://manuelcrocco.glitch.me/'>Manuel Crocco</a>. Read more about me <a href='https://twitter.com/ManuCro32'>here</a>.
+          Games made by <a href='https://manucro.vercel.app/'>Manuel Crocco</a>. Read more about me <a href='https://twitter.com/ManuCro32'>here</a>.
         </div>
       </GlobalContext.Provider>
     </div>
